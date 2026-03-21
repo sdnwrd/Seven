@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Services from './components/Services'
+import Process from './components/Process'
 
 function Home() {
   return (
@@ -9,6 +10,7 @@ function Home() {
       <Navbar />
       <Hero />
       <Services />
+      <Process />
     </>
   )
 }
