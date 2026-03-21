@@ -5,6 +5,7 @@ import Services from './components/Services'
 import Process from './components/Process'
 import Pricing from './components/Pricing'
 import Portfolio from './components/Portfolio'
+import About from './components/About'
 
 function Home() {
   return (
@@ -15,6 +16,7 @@ function Home() {
       <Process />
       <Pricing />
       <Portfolio />
+      <About />
     </>
   )
 }
