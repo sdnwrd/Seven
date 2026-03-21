@@ -24,6 +24,9 @@ const services = [
   },
 ]
 
+const REDUCED = { duration: 0, delay: 0 }
+const cardTransitions = services.map((_, i) => ({ duration: 0.6, delay: i * 0.1 }))
+
 export default function Services() {
   const shouldReduce = useReducedMotion()
 
@@ -57,7 +60,7 @@ export default function Services() {
                 initial={{ opacity: 0, y: shouldReduce ? 0 : 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.2 }}
-                transition={{ duration: shouldReduce ? 0 : 0.6, delay: shouldReduce ? 0 : index * 0.1 }}
+                transition={shouldReduce ? REDUCED : cardTransitions[index]}
                 whileHover={{ y: -2 }}
                 className="bg-[#1a1a1a] border border-[#2a2a2a] hover:border-[#3a3a3a] rounded-xl p-6 transition-colors duration-200"
               >
