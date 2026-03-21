@@ -33,6 +33,8 @@ const plans = [
 
 const REDUCED = { duration: 0, delay: 0 }
 const planTransitions = plans.map((_, i) => ({ duration: 0.6, delay: i * 0.1 }))
+const ctaWrapperTransition = { duration: 0.6, delay: 0.2 }
+const buttonHoverTransition = { duration: 0.15 }
 
 function scrollTo(id: string) {
   document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
@@ -102,13 +104,13 @@ export default function Pricing() {
           initial={{ opacity: 0, y: shouldReduce ? 0 : 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.2 }}
-          transition={{ duration: shouldReduce ? 0 : 0.6, delay: 0.2 }}
+          transition={shouldReduce ? REDUCED : ctaWrapperTransition}
           className="mt-10 text-center"
         >
           <motion.button
             onClick={() => scrollTo('kontakt')}
-            whileHover={{ scale: 1.02 }}
-            transition={{ duration: 0.15 }}
+            whileHover={shouldReduce ? {} : { scale: 1.02 }}
+            transition={buttonHoverTransition}
             className="bg-white text-black font-bold px-8 py-4 rounded-2xl text-base hover:bg-white/90 transition-colors"
           >
             Jetzt Angebot anfragen →
