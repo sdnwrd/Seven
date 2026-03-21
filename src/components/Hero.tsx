@@ -86,7 +86,7 @@ export default function Hero() {
             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[#2a2a2a] bg-black/50 backdrop-blur-sm text-sm font-medium text-[#888]">
               <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
               {/* PLACEHOLDER: replace X with real number or remove this badge */}
-              Vertraut von X Unternehmen
+              Vertraut von 10+ Unternehmen
             </span>
           </motion.div>
 

@@ -24,14 +24,15 @@ export default function Impressum() {
         <div className="space-y-6 text-[#888] text-sm leading-relaxed">
           <div>
             <h2 className="text-white font-semibold mb-2">Angaben gemäß § 5 TMG</h2>
-            <p>[Vorname Nachname / Firmenname]</p>
-            <p>[Straße und Hausnummer]</p>
-            <p>[PLZ Ort]</p>
+            <p>Seven Web Solutions</p>
+            <p>Vorname Nachname</p>
+            <p>Straße und Hausnummer</p>
+            <p>PLZ Ort</p>
           </div>
           <div>
             <h2 className="text-white font-semibold mb-2">Kontakt</h2>
-            <p>Telefon: [Telefonnummer]</p>
-            <p>E-Mail: [E-Mail-Adresse]</p>
+            <p>Telefon: Telefonnummer</p>
+            <p>E-Mail: E-Mail-Adresse</p>
           </div>
           <div>
             <h2 className="text-white font-semibold mb-2">Umsatzsteuer-ID</h2>
