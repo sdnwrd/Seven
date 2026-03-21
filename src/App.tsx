@@ -1,15 +1,21 @@
 import { Routes, Route } from 'react-router-dom'
+import Navbar from './components/Navbar'
 
 function Home() {
-  return <div className="min-h-screen bg-bg-primary text-white p-8">Home — in Arbeit</div>
+  return (
+    <>
+      <Navbar />
+      <div className="min-h-screen bg-[#0a0a0a] text-white p-8 pt-24">Home — in Arbeit</div>
+    </>
+  )
 }
 
 function Impressum() {
-  return <div className="min-h-screen bg-bg-primary text-white p-8">Impressum — in Arbeit</div>
+  return <div className="min-h-screen bg-[#0a0a0a] text-white p-8">Impressum — in Arbeit</div>
 }
 
 function Datenschutz() {
-  return <div className="min-h-screen bg-bg-primary text-white p-8">Datenschutz — in Arbeit</div>
+  return <div className="min-h-screen bg-[#0a0a0a] text-white p-8">Datenschutz — in Arbeit</div>
 }
 
 export default function App() {
