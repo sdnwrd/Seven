@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Services from './components/Services'
 import Process from './components/Process'
+import Pricing from './components/Pricing'
 
 function Home() {
   return (
@@ -11,6 +12,7 @@ function Home() {
       <Hero />
       <Services />
       <Process />
+      <Pricing />
     </>
   )
 }
