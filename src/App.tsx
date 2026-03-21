@@ -4,6 +4,7 @@ import Hero from './components/Hero'
 import Services from './components/Services'
 import Process from './components/Process'
 import Pricing from './components/Pricing'
+import Portfolio from './components/Portfolio'
 
 function Home() {
   return (
@@ -13,6 +14,7 @@ function Home() {
       <Services />
       <Process />
       <Pricing />
+      <Portfolio />
     </>
   )
 }
