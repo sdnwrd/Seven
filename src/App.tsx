@@ -6,6 +6,7 @@ import Process from './components/Process'
 import Pricing from './components/Pricing'
 import Portfolio from './components/Portfolio'
 import About from './components/About'
+import FAQ from './components/FAQ'
 
 function Home() {
   return (
@@ -17,6 +18,7 @@ function Home() {
       <Pricing />
       <Portfolio />
       <About />
+      <FAQ />
     </>
   )
 }
