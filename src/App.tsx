@@ -7,6 +7,8 @@ import Pricing from './components/Pricing'
 import Portfolio from './components/Portfolio'
 import About from './components/About'
 import FAQ from './components/FAQ'
+import Contact from './components/Contact'
+import Footer from './components/Footer'
 
 function Home() {
   return (
@@ -19,6 +21,8 @@ function Home() {
       <Portfolio />
       <About />
       <FAQ />
+      <Contact />
+      <Footer />
     </>
   )
 }
