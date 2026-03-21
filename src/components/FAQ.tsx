@@ -32,6 +32,8 @@ const faqs = [
 const REDUCED = { duration: 0, delay: 0 }
 const headerTransition = { duration: 0.6 }
 const listTransition = { duration: 0.6, delay: 0.1 }
+const chevronTransition = { duration: 0.2 }
+const expandTransition = { duration: 0.3, ease: 'easeInOut' as const }
 
 function FAQItem({
   question,
@@ -55,7 +57,7 @@ function FAQItem({
         <span className="text-white font-medium text-sm sm:text-base">{question}</span>
         <motion.div
           animate={{ rotate: isOpen ? 180 : 0 }}
-          transition={{ duration: shouldReduce ? 0 : 0.2 }}
+          transition={shouldReduce ? REDUCED : chevronTransition}
           className="flex-shrink-0"
         >
           <ChevronDown size={18} className="text-[#555]" />
@@ -67,7 +69,7 @@ function FAQItem({
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: 'auto', opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: shouldReduce ? 0 : 0.3, ease: 'easeInOut' }}
+            transition={shouldReduce ? REDUCED : expandTransition}
             className="overflow-hidden"
           >
             <p className="text-[#888] text-sm leading-relaxed pb-5">{answer}</p>
