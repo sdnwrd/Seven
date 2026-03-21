@@ -1,5 +1,15 @@
 import { motion, useReducedMotion } from 'framer-motion'
 
+const ctaHoverTransition = { duration: 0.15 }
+
+const PATH_COUNT = 36
+const floatingPathDurations = Array.from({ length: PATH_COUNT }, () => 20 + Math.random() * 10)
+const floatingPathTransitions = floatingPathDurations.map((duration) => ({
+  duration,
+  repeat: Infinity,
+  ease: 'linear' as const,
+}))
+
 interface PathData {
   id: number
   d: string
@@ -9,7 +19,7 @@ interface PathData {
 function FloatingPaths({ position }: { position: number }) {
   const shouldReduce = useReducedMotion()
 
-  const paths: PathData[] = Array.from({ length: 36 }, (_, i) => ({
+  const paths: PathData[] = Array.from({ length: PATH_COUNT }, (_, i) => ({
     id: i,
     d: `M-${380 - i * 5 * position} -${189 + i * 6}C-${380 - i * 5 * position} -${189 + i * 6} -${312 - i * 5 * position} ${216 - i * 6} ${152 - i * 5 * position} ${343 - i * 6}C${616 - i * 5 * position} ${470 - i * 6} ${684 - i * 5 * position} ${875 - i * 6} ${684 - i * 5 * position} ${875 - i * 6}`,
     width: 0.5 + i * 0.03,
@@ -32,11 +42,7 @@ function FloatingPaths({ position }: { position: number }) {
               opacity: [0.3, 0.6, 0.3],
               pathOffset: [0, 1, 0],
             }}
-            transition={{
-              duration: 20 + Math.random() * 10,
-              repeat: Infinity,
-              ease: 'linear',
-            }}
+            transition={floatingPathTransitions[path.id]}
           />
         ))}
       </svg>
@@ -131,8 +137,8 @@ export default function Hero() {
           >
             <motion.button
               onClick={() => scrollTo('kontakt')}
-              whileHover={{ scale: 1.02 }}
-              transition={{ duration: 0.15 }}
+              whileHover={shouldReduce ? {} : { scale: 1.02 }}
+              transition={ctaHoverTransition}
               className="bg-white text-black font-bold px-8 py-4 rounded-2xl text-base hover:bg-white/90 transition-colors"
             >
               Jetzt anfragen →
