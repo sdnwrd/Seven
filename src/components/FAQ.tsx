@@ -5,7 +5,7 @@ import { ChevronDown } from 'lucide-react'
 const faqs = [
   {
     question: 'Wie lange dauert die Umsetzung?',
-    answer: 'In der Regel dauert die Umsetzung einer Website 10–14 Werktage ab dem ersten Gespräch. Der genaue Zeitplan hängt vom Umfang und der Bereitstellung Ihrer Inhalte ab.',
+    answer: 'In der Regel dauert die Umsetzung einer Website 7-10 Werktage ab dem ersten Gespräch. Der genaue Zeitplan hängt vom Umfang und der Bereitstellung Ihrer Inhalte ab.',
   },
   {
     question: 'Was ist im monatlichen Paket enthalten?',

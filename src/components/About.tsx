@@ -1,7 +1,7 @@
 import { motion, useReducedMotion } from 'framer-motion'
 
 const stats = [
-  { value: '14 Tage', label: 'bis zur fertigen Website' },
+  { value: '10 Tage', label: 'bis zur fertigen Website' },
   { value: '100%', label: 'persönliche Betreuung' },
 ]
 
