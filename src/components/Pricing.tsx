@@ -4,7 +4,7 @@ import { Check } from 'lucide-react'
 const plans = [
   {
     type: 'Einmalig',
-    price: 'ab X.XXX €',
+    price: 'ab 399 €',
     description: 'Website-Aufbau inkl. Design & Entwicklung',
     items: [
       'Individuelles Webdesign',
@@ -17,7 +17,7 @@ const plans = [
   },
   {
     type: 'Monatlich',
-    price: 'ab XX €',
+    price: 'ab 49 €',
     suffix: '/Monat',
     description: 'Laufende Betreuung & technischer Support',
     items: [
@@ -35,6 +35,7 @@ const REDUCED = { duration: 0, delay: 0 }
 const planTransitions = plans.map((_, i) => ({ duration: 0.6, delay: i * 0.1 }))
 const ctaWrapperTransition = { duration: 0.6, delay: 0.2 }
 const buttonHoverTransition = { duration: 0.15 }
+const priceBlockTransition = { duration: 0.6, delay: 0.1 }
 
 function scrollTo(id: string) {
   document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
@@ -59,7 +60,36 @@ export default function Pricing() {
           >
             Transparent & fair
           </h2>
-          <p className="text-[#888] text-lg mb-14">Keine versteckten Kosten. Kein langer Vertrag.</p>
+          <p className="text-[#888] text-lg mb-8">Keine versteckten Kosten. Kein langer Vertrag.</p>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: shouldReduce ? 0 : 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={shouldReduce ? REDUCED : priceBlockTransition}
+          className="mb-10"
+        >
+          <p className="section-label mb-2">Preismodell</p>
+          <div className="flex flex-wrap items-baseline gap-3 mb-2">
+            <span
+              className="font-extrabold text-white"
+              style={{ fontSize: 'clamp(2rem, 3.5vw, 2.8rem)', letterSpacing: '-0.04em' }}
+            >
+              ab 399 €
+            </span>
+            <span className="font-bold text-[#333] text-xl">+</span>
+            <span
+              className="font-extrabold text-white"
+              style={{ fontSize: 'clamp(2rem, 3.5vw, 2.8rem)', letterSpacing: '-0.04em' }}
+            >
+              ab 49 €<span className="text-[#555] text-sm ml-1">/Monat</span>
+            </span>
+          </div>
+          <p className="text-[#555] text-sm mb-4">
+            Einmalige Einrichtung · Monatliche Betreuung · Kein langer Vertrag
+          </p>
+          <hr className="border-t border-[#1e1e1e]" />
         </motion.div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
