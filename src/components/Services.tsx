@@ -5,7 +5,7 @@ const services = [
   {
     icon: Palette,
     title: 'Webdesign',
-    description: 'Individuelles Design, das zu Ihrem Unternehmen passt — kein Template, kein Einheitsbrei.',
+    description: 'Individuelles Design, das zu Ihrem Unternehmen passt - kein Template, kein Einheitsbrei.',
   },
   {
     icon: Code2,
@@ -15,12 +15,12 @@ const services = [
   {
     icon: Search,
     title: 'SEO-Grundlagen',
-    description: 'Technisch sauber und für Suchmaschinen optimiert — damit Sie von Anfang an gefunden werden.',
+    description: 'Technisch sauber und für Suchmaschinen optimiert - damit Sie von Anfang an gefunden werden.',
   },
   {
     icon: Wrench,
     title: 'Betreuung',
-    description: 'Monatliche Pflege, Updates und technischer Support — wir kümmern uns dauerhaft um Ihre Website.',
+    description: 'Monatliche Pflege, Updates und technischer Support - wir kümmern uns dauerhaft um Ihre Website.',
   },
 ]
 
@@ -47,7 +47,7 @@ export default function Services() {
             Was wir für Sie tun
           </h2>
           <p className="text-[#888] text-lg max-w-xl mb-14">
-            Alles aus einer Hand — von der ersten Idee bis zur fertigen Website.
+            Alles aus einer Hand - von der ersten Idee bis zur fertigen Website.
           </p>
         </motion.div>
 

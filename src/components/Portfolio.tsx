@@ -30,7 +30,7 @@ export default function Portfolio() {
             Projekte
           </h2>
           <p className="text-[#888] text-lg mb-14 max-w-xl">
-            Referenzen folgen in Kürze — wir bauen gerade die ersten Websites.
+            Referenzen folgen in Kürze - wir bauen gerade die ersten Websites.
           </p>
         </motion.div>
 

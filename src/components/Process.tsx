@@ -9,7 +9,7 @@ const steps = [
   {
     number: '02',
     title: 'Design & Entwicklung',
-    description: 'Wir entwerfen und entwickeln Ihre maßgeschneiderte Website — in der Regel innerhalb von 14 Tagen.',
+    description: 'Wir entwerfen und entwickeln Ihre maßgeschneiderte Website - in der Regel innerhalb von 14 Tagen.',
   },
   {
     number: '03',

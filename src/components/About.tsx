@@ -31,13 +31,13 @@ export default function About() {
               Wer hinter Seven steht
             </h2>
             <p className="text-[#888] leading-relaxed mb-4">
-              Wir sind Seven Web Solutions — ein Team aus leidenschaftlichen Entwicklern und Designern mit dem Ziel, kleinen und mittelständischen Unternehmen zu einem starken digitalen Auftritt zu verhelfen.
+              Wir sind Seven Web Solutions - ein Team aus leidenschaftlichen Entwicklern und Designern mit dem Ziel, kleinen und mittelständischen Unternehmen zu einem starken digitalen Auftritt zu verhelfen.
             </p>
             <p className="text-[#888] leading-relaxed mb-4">
               Uns liegt es am Herzen, Websites zu bauen, die nicht nur gut aussehen, sondern auch Ergebnisse liefern. Persönlich, direkt und ohne Umwege.
             </p>
             <p className="text-[#888] leading-relaxed">
-              Jedes Projekt betreuen wir von Anfang bis Ende selbst — keine Vermittler, keine Überraschungen.
+              Jedes Projekt betreuen wir von Anfang bis Ende selbst - keine Vermittler, keine Überraschungen.
             </p>
           </motion.div>
 

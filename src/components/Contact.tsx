@@ -91,7 +91,7 @@ export default function Contact() {
             Jetzt anfragen
           </h2>
           <p className="text-[#888] text-lg mb-10">
-            Schildern Sie uns kurz Ihr Vorhaben — wir melden uns innerhalb von 24 Stunden.
+            Schildern Sie uns kurz Ihr Vorhaben - wir melden uns innerhalb von 24 Stunden.
           </p>
         </motion.div>
 
@@ -152,7 +152,7 @@ export default function Contact() {
             <div className="pt-2">
               <p className="text-[#444] text-xs mb-3">
                 Über Ihr Unternehmen{' '}
-                <span className="text-[#333]">— optional, hilft uns besser vorbereitet zu sein</span>
+                <span className="text-[#333]">- optional, hilft uns besser vorbereitet zu sein</span>
               </p>
               <div className="space-y-4">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

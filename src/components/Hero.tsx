@@ -126,7 +126,7 @@ export default function Hero() {
             transition={{ duration: shouldReduce ? 0 : 0.8, delay: 0.6 }}
             className="text-lg sm:text-xl text-[#888] mb-10 max-w-2xl mx-auto font-light leading-relaxed"
           >
-            Professionelle Webauftritte für kleine und mittelständische Unternehmen — schnell, hochwertig, zuverlässig.
+            Professionelle Webauftritte für kleine und mittelständische Unternehmen - schnell, hochwertig, zuverlässig.
           </motion.p>
 
           {/* CTA */}

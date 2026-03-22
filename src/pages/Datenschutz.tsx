@@ -39,7 +39,7 @@ export default function Datenschutz() {
             <p>[Angaben zur verantwortlichen Stelle gemäß DSGVO Art. 13]</p>
           </div>
           <p className="text-[#444] text-xs mt-8 pt-8 border-t border-[#1e1e1e]">
-            Hinweis — Bitte durch eine vollständige DSGVO-konforme Datenschutzerklärung ersetzen vor dem Launch.
+            Hinweis - Bitte durch eine vollständige DSGVO-konforme Datenschutzerklärung ersetzen vor dem Launch.
           </p>
         </div>
       </div>

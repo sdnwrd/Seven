@@ -21,11 +21,11 @@ const faqs = [
   },
   {
     question: 'Bieten Sie auch Online-Shops an?',
-    answer: 'Ja, wir bauen auch Online-Shops. Die Umsetzung und der Preis hängen vom gewünschten Funktionsumfang ab — sprechen Sie uns einfach an.',
+    answer: 'Ja, wir bauen auch Online-Shops. Die Umsetzung und der Preis hängen vom gewünschten Funktionsumfang ab - sprechen Sie uns einfach an.',
   },
   {
     question: 'Was passiert, wenn ich kündige?',
-    answer: 'Das monatliche Paket ist jederzeit kündbar. Ihre Website und alle Daten gehören Ihnen — wir übergeben alles sauber, ohne Haken.',
+    answer: 'Das monatliche Paket ist jederzeit kündbar. Ihre Website und alle Daten gehören Ihnen - wir übergeben alles sauber, ohne Haken.',
   },
 ]
 

@@ -39,7 +39,7 @@ export default function Impressum() {
             <p>Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz: [USt-ID]</p>
           </div>
           <p className="text-[#444] text-xs mt-8 pt-8 border-t border-[#1e1e1e]">
-            Hinweis — Bitte durch echte Angaben ersetzen vor dem Launch.
+            Hinweis - Bitte durch echte Angaben ersetzen vor dem Launch.
           </p>
         </div>
       </div>
