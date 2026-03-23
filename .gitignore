@@ -24,3 +24,10 @@ dist-ssr
 *.sw?
 
 .vercel
+
+# Design/tooling scratch files — not part of the build
+logo-generator.html
+logo-review.html
+example/
+docs/
+.superpowers/
