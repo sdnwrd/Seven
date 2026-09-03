@@ -31,3 +31,12 @@ logo-review.html
 example/
 docs/
 .superpowers/
+
+# Agenten-Arbeitsdateien gehoeren nicht ins Repo
+.claude/
+.superpowers/
+.agents/
+CLAUDE.md
+AGENTS.md
+.mcp.json
+skills-lock.json
